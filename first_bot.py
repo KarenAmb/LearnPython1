@@ -27,4 +27,5 @@ def talking_with_user(bot, update):
     print(user_text)
     update.message.reply_text(user_text+'. Окей, и что?')
 
-main()
+if __name__ == "__main__":
+    main()
