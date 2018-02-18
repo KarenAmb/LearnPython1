@@ -17,9 +17,10 @@ def main():
 
 
 def user_welcomming(bot, update):
-    text = 'Здарова'
-    print(text)
-    update.message.reply_text(text)
+    my_text = """Здарова {}!
+Я только начал жить, не суди строго =)""".format(update.message.chat.first_name)
+    print(my_text)
+    update.message.reply_text(my_text)
 
 def talking_with_user(bot, update):
     user_text = update.message.text
